@@ -21,11 +21,9 @@
   <component name="ChangeListManager">
     <list default="true" id="a1760808-faa8-445c-a551-b5de8ddd920b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Character.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Character.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/House.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/House.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Patronus.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Patronus.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Role.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Role.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/School.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/School.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_08_29_153244_create_houses_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_08_29_153244_create_houses_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_08_29_153319_create_characters_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_08_29_153319_create_characters_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -220,5 +218,9 @@
       <screen x="1366" y="0" width="1920" height="1080" />
     </state>
     <state width="1874" height="284" key="GridCell.Tab.0.right/46.147.1320.741/1366.0.1920.1080@1366.0.1920.1080" timestamp="1598716703206" />
+    <state x="2017" y="148" width="618" height="783" key="find.popup" timestamp="1598721934647">
+      <screen x="1366" y="0" width="1920" height="1080" />
+    </state>
+    <state x="2017" y="148" width="618" height="783" key="find.popup/46.147.1320.741/1366.0.1920.1080@1366.0.1920.1080" timestamp="1598721934647" />
   </component>
 </project>

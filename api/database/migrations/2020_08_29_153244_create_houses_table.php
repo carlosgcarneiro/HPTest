@@ -17,8 +17,7 @@ class CreateHousesTable extends Migration
             $table->id();
             $table->string('potterapi_id');
             $table->string('name');
-            $table->integer('school_id')->unsigned()->nullable();
-            $table->foreign('school_id')->references('id')->on('schools');
+            $table->foreignId('school_id')->constrained('schools');
             $table->timestamps();
         });
     }

@@ -16,12 +16,9 @@ class CreateCharactersTable extends Migration
         Schema::create('characters', function (Blueprint $table) {
             $table->id();
             $table->string('name');
-            $table->integer('role_id')->unsigned()->nullable();
-            $table->foreign('role_id')->references('id')->on('roles');
-            $table->integer('house_id')->unsigned()->nullable();
-            $table->foreign('house_id')->references('id')->on('houses');
-            $table->integer('patronus_id')->unsigned()->nullable();
-            $table->foreign('patronus_id')->references('id')->on('patronuses');
+            $table->foreignId('role_id')->constrained('roles');
+            $table->foreignId('house_id')->constrained('houses');
+            $table->foreignId('patronus_id')->constrained('patronuses');
             $table->timestamps();
         });
     }

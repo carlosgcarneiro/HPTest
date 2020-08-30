@@ -20,3 +20,11 @@ Route::get('/', function () {
 Route::get('/phpinfo', function () {
     phpinfo();
 });
+
+Route::get('/login', 'Auth\LoginController@login');
+
+Auth::routes();
+
+Route::resource('characters', 'CharacterController')->middleware('auth');
+
+Route::get('/home', 'HomeController@index')->name('home');

@@ -15,4 +15,4 @@ Aplicação CRUD para os personagens de Harry Potter
 
   > php artisan migrate:fresh --seed
 
-![Database Schema](doc/DataBaseSchema.png)
+![Database Schema](doc/DataBaseSchema2.png)

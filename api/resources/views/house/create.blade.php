@@ -1,4 +1,4 @@
-@extends('house.default')
+@extends('layouts.app')
 
 @section('title',__('Criar HP (CRUD Laravel)'))
 
@@ -49,6 +49,11 @@
                         <div class="form-group">
                             {!! Form::label(__('Potter API ID:')) !!}
                             {!! Form::text("potterapi_id" , null, ["id"=>"potterapi_id", "class"=>"form-control","required"=>"required"]) !!}
+                        </div>
+
+                        <div class="form-group">
+                            {!! Form::label(__('School:')) !!}
+                            {!! Form::select("school_id", $school->pluck('name'), null,  [ "class"=>"form-control","required"=>"required", "placeholder" => "Select a school..."]) !!}
                         </div>
 
                         <div class="well well-sm clearfix">

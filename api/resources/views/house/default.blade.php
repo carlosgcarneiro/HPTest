@@ -51,7 +51,12 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <!-- Left Side Of Navbar -->
                 <ul class="navbar-nav mr-auto">
-
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ route('characters.index') }}">{{ __('Characters') }}</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ route('houses.index') }}">{{ __('Houses') }}</a>
+                    </li>
                 </ul>
 
                 <!-- Right Side Of Navbar -->

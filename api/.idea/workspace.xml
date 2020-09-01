@@ -22,13 +22,19 @@
     <list default="true" id="a1760808-faa8-445c-a551-b5de8ddd920b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/../README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../README.md.backup" beforeDir="false" afterPath="$PROJECT_DIR$/../README.md.backup" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.env.example" beforeDir="false" afterPath="$PROJECT_DIR$/.env.example" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/CharacterController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/CharacterController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/HouseController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/HouseController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/character/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/character/create.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/character/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/character/edit.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/character/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/character/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/character/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/character/show.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/house/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/house/create.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/house/default.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/house/default.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/house/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/house/edit.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/house/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/house/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/house/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/house/show.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -220,10 +226,11 @@
       <screen x="46" y="141" width="1320" height="747" />
     </state>
     <state x="46" y="141" width="662" height="747" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/46.141.1320.747/1366.0.1920.1080@46.141.1320.747" timestamp="1598924492519" />
-    <state x="439" y="272" width="524" height="491" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1598929846669">
-      <screen x="46" y="141" width="1320" height="747" />
+    <state x="1938" y="189" width="524" height="491" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1598995223448">
+      <screen x="1366" y="0" width="1920" height="1080" />
     </state>
     <state x="439" y="272" width="524" height="491" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/46.141.1320.747/1366.0.1920.1080@46.141.1320.747" timestamp="1598929846669" />
+    <state x="1938" y="189" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/46.147.1320.741/1366.0.1920.1080@1366.0.1920.1080" timestamp="1598995223448" />
     <state width="1874" height="284" key="GridCell.Tab.0.bottom" timestamp="1598716703206">
       <screen x="1366" y="0" width="1920" height="1080" />
     </state>
@@ -240,11 +247,11 @@
       <screen x="1366" y="0" width="1920" height="1080" />
     </state>
     <state width="1874" height="284" key="GridCell.Tab.0.right/46.147.1320.741/1366.0.1920.1080@1366.0.1920.1080" timestamp="1598716703206" />
-    <state x="2017" y="148" width="618" height="783" key="find.popup" timestamp="1598990830388">
+    <state x="2017" y="148" width="618" height="783" key="find.popup" timestamp="1598997416394">
       <screen x="1366" y="0" width="1920" height="1080" />
     </state>
     <state x="494" y="243" width="588" height="542" key="find.popup/46.141.1320.747/1366.0.1920.1080@46.141.1320.747" timestamp="1598925162076" />
-    <state x="2017" y="148" width="618" height="783" key="find.popup/46.147.1320.741/1366.0.1920.1080@1366.0.1920.1080" timestamp="1598990830388" />
+    <state x="2017" y="148" width="618" height="783" key="find.popup/46.147.1320.741/1366.0.1920.1080@1366.0.1920.1080" timestamp="1598997416394" />
     <state x="404" y="194" key="run.anything.popup" timestamp="1598927648589">
       <screen x="46" y="141" width="1320" height="747" />
     </state>

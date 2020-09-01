@@ -13,6 +13,10 @@ class DatabaseSeeder extends Seeder
     {
         // $this->call(UserSeeder::class);
 
+        //Default User
+        \App\User::create(['name' => 'Teste', 'email' => 'teste@teste.com', 'password' => '$2y$10$9yyrXUoaJKTwA4JfbHUKB.Q6oa6fSQ08Q4bk6liKIX0hwVCLjPJIa']);
+
+
         // Schools
         $schools = [
             ['name' => 'Beauxbatons Academy of Magic'],

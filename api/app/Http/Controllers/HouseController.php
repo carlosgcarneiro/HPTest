@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\House;
+use App\School;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Redirect;
 
@@ -26,7 +27,8 @@ class HouseController extends Controller
      */
     public function create()
     {
-        return view('house.create');
+        $data['school'] = School::all(['id', 'name']);
+        return view('house.create', $data);
     }
 
     /**
@@ -40,6 +42,7 @@ class HouseController extends Controller
         $data = $request->all();
         $request->validate([
             'name' => 'required',
+            'school_id' => 'required',
         ]);
 
         $where = array('name' => $data['name']);
@@ -51,6 +54,8 @@ class HouseController extends Controller
 
         unset($data['_token']);
         unset($data['_method']);
+
+        $data['school_id'] +=1;
 
         House::create($data);
 
@@ -80,6 +85,7 @@ class HouseController extends Controller
     {
         $where = array('id' => $id);
         $data['house'] = House::where($where)->first();
+        $data['school'] = School::all(['id', 'name']);
 
         return view('house.edit', $data);
     }
@@ -97,10 +103,13 @@ class HouseController extends Controller
         $request->validate([
             'name' => 'required',
             'potterapi_id' => 'required',
+            'school_id' => 'required',
         ]);
 
         unset($data['_token']);
         unset($data['_method']);
+
+        $data['school_id'] +=1;
 
         House::where('id',$id)->update($data);
 

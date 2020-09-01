@@ -1,4 +1,4 @@
-@extends('character.default')
+@extends('layouts.app')
 
 @section('title',__('Criar HP (CRUD Laravel)'))
 
@@ -16,7 +16,7 @@
                     <div class="card-header">
                         <div class="d-flex justify-content-between w-100">
                             <span>@lang('Criar HP (CRUD Laravel)')</span>
-                            <a href="{{ url('character') }}" class="btn-info btn-sm">
+                            <a href="{{ url('characters') }}" class="btn-info btn-sm">
                                 <i class="fa fa-arrow-left"></i> @lang('Back')
                             </a>
                         </div>

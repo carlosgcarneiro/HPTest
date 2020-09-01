@@ -1,4 +1,4 @@
-@extends('house.default')
+@extends('layouts.app')
 
 @section('title',__('Editar HP (CRUD Laravel)'));
 
@@ -48,6 +48,11 @@
                         <div class="form-group">
                             {!! Form::label(__('Potter API ID:')) !!}
                             {!! Form::text("potterapi_id" , $house->potterapi_id, ["id"=>"potterapi_id", "class"=>"form-control","required"=>"required"]) !!}
+                        </div>
+
+                        <div class="form-group">
+                            {!! Form::label(__('School:')) !!}
+                            {!! Form::select("school_id", $school->pluck('name'), $house->school_id-1,  [ "class"=>"form-control","required"=>"required", "placeholder" => "Select a school..."]) !!}
                         </div>
 
                         <div class="well well-sm clearfix">

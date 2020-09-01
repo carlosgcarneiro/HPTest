@@ -1,4 +1,4 @@
-@extends('house.default')
+@extends('layouts.app')
 
 @section('title',__('HP (CRUD Laravel)'))
 

@@ -23,18 +23,6 @@
       <change beforePath="$PROJECT_DIR$/../README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../README.md.backup" beforeDir="false" afterPath="$PROJECT_DIR$/../README.md.backup" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/HouseController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/HouseController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/character/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/character/create.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/character/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/character/edit.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/character/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/character/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/character/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/character/show.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/house/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/house/create.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/house/default.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/house/default.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/house/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/house/edit.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/house/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/house/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/house/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/house/show.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

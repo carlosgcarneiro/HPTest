@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title',__($character->name . 'HP (CRUD Laravel)'))
+@section('title',__($house->name . 'HP (CRUD Laravel)'))
 
 @push('css')
     <style>
@@ -24,8 +24,8 @@
                 <div class="card">
                     <div class="card-header">
                         <div class="d-flex justify-content-between w-100">
-                            <span class="text-info">{{$character->name}}</span>
-                            <a href="{{ url('characters') }}" class="btn-info btn-sm">
+                            <span class="text-info">{{$house->name}}</span>
+                            <a href="{{ url('houses') }}" class="btn-info btn-sm">
                                 <i class="fa fa-arrow-left"></i> @lang('Back')
                             </a>
                         </div>
@@ -42,23 +42,11 @@
                             <tbody>
                             <tr>
                                 <th align="left"><strong>ID:</strong></th>
-                                <th align="left">{{$character->id}}</th>
-                            </tr>
-                            <tr>
-                                <th align="left"><strong>@lang('Role')</strong>:</th>
-                                <th align="left">{{$character->role->name}}</th>
-                            </tr>
-                            <tr>
-                                <th align="left"><strong>@lang('House')</strong>:</th>
-                                <th align="left">{{$character->house->name}}</th>
+                                <th align="left">{{$house->id}}</th>
                             </tr>
                             <tr>
                                 <th align="left"><strong>@lang('House API Code')</strong>:</th>
-                                <th align="left">{{$character->house->potterapi_id}}</th>
-                            </tr>
-                            <tr>
-                                <th align="left"><strong>@lang('Patronus')</strong>:</th>
-                                <th align="left">{{$character->patronus->name}}</th>
+                                <th align="left">{{$house->potterapi_id}}</th>
                             </tr>
                         </table>
                     </div>

@@ -32,16 +32,16 @@
 
                         <div class="form-group">
                             {!! Form::label(__('Name:')) !!}
-                            {!! Form::text("name" , null, ["class"=>"form-control","required"=>"required"]) !!}
+                            {!! Form::text("name" , null, ["id"=>"name", "class"=>"form-control","required"=>"required"]) !!}
                         </div>
                         <div class="form-group">
                             {!! Form::label(__('Role:')) !!}
-                            {!! Form::select("role_id", $role->pluck('name'), null,  ["class"=>"form-control","required"=>"required", "placeholder" => "Select a role..."]) !!}
+                            {!! Form::select("role_id", $role->pluck('name'), null,  [ "class"=>"form-control","required"=>"required", "placeholder" => "Select a role..."]) !!}
                         </div>
 
                         <div class="form-group">
                             {!! Form::label(__('House:')) !!}
-                            {!! Form::select("house_id", $house->pluck('name') , null, ["class"=>"form-control","required"=>"required", "placeholder" => "Select a house..."]) !!}
+                            {!! Form::select("house_id", $house->pluck('name') , null, ["id"=>"house", "class"=>"form-control","required"=>"required", "placeholder" => "Select a house..."]) !!}
                         </div>
 
                         <div class="form-group">
@@ -55,8 +55,21 @@
                         </div>
 
                         {!! Form::close() !!}
+                        <div style="border:1px solid rgb(195, 195, 195); border-radius: 5px; margin-left: 10px; margin-top: 15px; overflow: auto; padding: 15px 15px;">
+                            <div class="form-group">
+                                <span>@lang('To load a Hogwarts\' character name and house from Potter API, insert the Potter API ID value and click at Load button')</span>
+                            </div>
 
+                            <div class="form-group">
+                                {!! Form::label(__('Character Potter API ID:')) !!}
+                                {!! Form::text("potterapi_id" , null, ["id"=>"potterapi_id", "class"=>"form-control","required"=>"required"]) !!}
+                            </div>
 
+                            <div class="well well-sm clearfix">
+                                <button id="load" class="btn btn-primary pull-left" title="@lang('Salvar')"
+                                        type="button">@lang('Load')</button>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -72,6 +85,33 @@
             var regex = /[^0-9]/gm;
             const result = vall.replace(regex, ``);
             $('#' + id).val(result);
+        });
+    </script><script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.js"></script>
+    <script>
+        jQuery(document).ready(function($){
+            jQuery('#load').click(function () {
+                if($('#potterapi_id').val().length>0){
+                    $.ajax({
+                        url: '/api/v1/character_potterapi_id/'+$('#potterapi_id').val(),
+                        type: 'GET',
+                        success: function (data) {
+                            console.log(data);
+                            if(data['name'].length>0){
+                                $('#name').val(data['name']);
+                                $('#house').val(data['house']);
+                            }else{
+                                alert("House not found.")
+                            }
+                        },
+                        error: function (jqXHR, textStatus, errorThrown) {
+                            alert("Server Error.")
+                        }
+                    });
+                }else{
+                    alert("Insert a Potter API ID and try again.")
+                }
+            });
+
         });
     </script>
 @endpush

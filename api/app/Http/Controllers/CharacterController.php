@@ -132,4 +132,25 @@ class CharacterController extends Controller
         Character::where('id',$id)->delete();
         return Redirect::to('characters')->with('success','Character deleted successfully');
     }
+
+    public function varify_character_by_potterapi_id($potterapi_id)
+    {
+        $json = json_decode(file_get_contents('https://www.potterapi.com/v1/characters?key='.env('POTTER_API_KEY')), true);
+
+        $name = "";
+        $house = -1;
+        /* foreach ($json as $house){
+            echo $house["_id"]."<br><br>";
+        }
+        5a123dc30f5ae10021650dc5    5a123de10f5ae10021650dc6    5a123df10f5ae10021650dc7   5a123e450f5ae10021650dc8  5a123e600f5ae10021650dc9
+        */
+
+        foreach ($json as $character){
+            if($character["_id"]==$potterapi_id){
+                $name = $character["name"];
+                $house = House::get()->where('name',$character["house"])->first()['id']-1;
+            }
+        }
+        return ["name" => $name, "house" => $house];
+    }
 }

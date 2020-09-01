@@ -1,5 +1,5 @@
 # HPTest
-CRUD aplication about Harry Potter characters.
+CRUD application about Harry Potter characters.
 
 
 
@@ -7,7 +7,7 @@ CRUD aplication about Harry Potter characters.
 
 > git clone https://github.com/carlosgcarneiro/HPTest.git
 
-### 2. Install Aplication
+### 2. Install Application
   1. Run composer install to generate depedencies in vendor folder;
   2. Change .env.example to .env;
   3. Run php artisan key:generate;
@@ -26,18 +26,18 @@ You can see the database schema:
 ![Database Schema](doc/DataBaseSchema.png)
 
 
-### 3. Using Aplication
+### 3. Using Application
 
-After install the aplication, on the project folder, you should run:
+After install the application, on the project folder, you should run:
 
 >php artisan serve
 
-Later, on your favourite browser, type the url shown on the prompt. As example, on the picture above, you should type http://127.0.0.1:8000 .
+Later, on your favourite browser, type the url shown on the prompt. As example, on the picture bellow, you should type http://127.0.0.1:8000 .
 
 
 ![Run Command](doc/run_command.jpeg)
 
-Now, you just need to log in and use the aplication.
+Now, you just need to log in and use the application.
 
 
 - When you create a character, you can load the name and the house from www.potterapi.com .
